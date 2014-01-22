@@ -6,10 +6,12 @@ PLUGIN_TYPE=geoservices
 #include(../../../common.pri)
 
 QT += network widgets positioning
-INCLUDEPATH+=../../../src/location/maps ../../../src/location/ ../../../src/location/maps/tiled
+INCLUDEPATH+=../../location/maps ../../location/ ../../location/maps/tiled
 
 CONFIG += mobility
 MOBILITY = location
+
+LIBS+=-L ../../location/maps -lmaps
 
 HEADERS += \
             qgeocodexmlparser.h \
@@ -40,14 +42,5 @@ INCLUDEPATH += $$SOURCE_DIR/src/location \
                 $$SOURCE_DIR/src/location/maps \
                 $$SOURCE_DIR/src/location/maps/tiled
 
-symbian {
-    TARGET.EPOCALLOWDLLDATA = 1
-    TARGET.CAPABILITY = ALL -TCB
-    TARGET.UID3 = 0x2002BFCA
-    pluginDep.sources = $${TARGET}.dll
-    pluginDep.path = $${QT_PLUGINS_BASE_DIR}/$${PLUGIN_TYPE}
-    DEPLOYMENT += pluginDep      
-    LIBS += -lefsrv
-}
 
 RESOURCES += resource.qrc
