@@ -47,8 +47,10 @@
 
 #include <QFont>
 #include <QPoint>
+#include <QPen>
+#include <QBrush>
 
-QTM_BEGIN_NAMESPACE
+//QTM_BEGIN_NAMESPACE
 
 class QGeoMapTextObjectPrivate;
 
@@ -110,6 +112,6 @@ private:
     Q_DISABLE_COPY(QGeoMapTextObject)
 };
 
-QTM_END_NAMESPACE
+//QTM_END_NAMESPACE
 
 #endif

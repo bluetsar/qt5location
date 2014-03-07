@@ -48,7 +48,8 @@
 
 //QTM_BEGIN_NAMESPACE
 
-class QGeoCoordinate;
+#include <QGeoCoordinate>
+//class QGeoCoordinate;
 class QGeoMappingManager;
 class QGeoBoundingBox;
 class QGeoMapObject;

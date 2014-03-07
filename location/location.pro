@@ -1,6 +1,6 @@
 TEMPLATE = lib
 TARGET = QtLocation
-QT = core gui network sql widgets
+QT = core gui network sql widgets positioning
 
 include(../../common.pri)
 
@@ -25,7 +25,6 @@ PUBLIC_HEADERS += \
                     qgeoboundingarea.h \
                     qgeoboundingbox.h \
                     qgeoboundingcircle.h \
-                    qgeocoordinate.h \
                     qgeoplace.h \
                     qgeopositioninfo.h \
                     qgeopositioninfosource.h \
@@ -43,7 +42,6 @@ PRIVATE_HEADERS += \
                     qnmeapositioninfosource_p.h \
                     qgeoareamonitor_polling_p.h \
                     projwrapper_p.h \
-                    qgeocoordinate_p.h
 
 symbian {
     PRIVATE_HEADERS += qgeopositioninfosource_s60_p.h \
@@ -149,7 +147,6 @@ SOURCES += \
             qgeoboundingarea.cpp \
             qgeoboundingbox.cpp \
             qgeoboundingcircle.cpp \
-            qgeocoordinate.cpp \
             qgeoplace.cpp \
             qgeopositioninfo.cpp \
             qgeopositioninfosource.cpp \

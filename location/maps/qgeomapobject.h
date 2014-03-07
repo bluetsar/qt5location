@@ -51,9 +51,10 @@ class QPainter;
 class QRectF;
 class QGraphicsItem;
 
-QTM_BEGIN_NAMESPACE
+//QTM_BEGIN_NAMESPACE
 
-class QGeoCoordinate;
+//class QGeoCoordinate;
+#include <QGeoCoordinate>
 class QGeoBoundingBox;
 class QGeoMapObjectPrivate;
 class QGeoMapContainer;
@@ -149,6 +150,6 @@ private:
     friend class QGeoMapGroupObject;
 };
 
-QTM_END_NAMESPACE
+//QTM_END_NAMESPACE
 
 #endif
