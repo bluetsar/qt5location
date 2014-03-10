@@ -85,6 +85,8 @@ inline QStringList mobilityPlugins(const QString& plugintype)
     //#endif
 
     QStringList paths = QCoreApplication::libraryPaths();
+    qDebug() << "Plugin paths:" << paths;
+    paths << QCoreApplication::applicationDirPath()+"/lib";
 #ifdef QTM_PLUGIN_PATH
     paths << QLatin1String(QTM_PLUGIN_PATH);
 #endif
@@ -127,11 +129,15 @@ inline QStringList mobilityPlugins(const QString& plugintype)
         }
 #endif
 
+#ifndef Q_OS_ANDROID
         QString subdir(QLatin1String("plugins/"));
         subdir += plugintype;
         if (pluginsDir.path().endsWith(QLatin1String("/plugins"))
             || pluginsDir.path().endsWith(QLatin1String("/plugins/")))
             subdir = plugintype;
+#else
+	QString subdir;
+#endif
 	qDebug() << "QDir(pluginsDir.filePath(subdir)):" << QDir(pluginsDir.filePath(subdir)); 
         if (CHECKDIR(QDir(pluginsDir.filePath(subdir)))) {
             pluginsDir.cd(subdir);
