@@ -1,3 +1,4 @@
+TARGET = maps
 TEMPLATE = lib
 
 QT+=positioning gui widgets network
@@ -219,3 +220,5 @@ SOURCES += \
 
 
 HEADERS += $$PUBLIC_HEADERS $$PRIVATE_HEADERS
+
+load(qt_module)

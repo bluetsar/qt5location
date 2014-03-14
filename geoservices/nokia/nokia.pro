@@ -1,7 +1,8 @@
-TEMPLATE = lib
-CONFIG += plugin
-TARGET = $$qtLibraryTarget(qtgeoservices_nokia)
-PLUGIN_TYPE=geoservices
+TARGET = qtgeoservices_nokia
+QT +=  positioning-private network
+
+PLUGIN_TYPE = geoservices
+load(qt_plugin)
 
 #include(../../../common.pri)
 
