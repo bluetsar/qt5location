@@ -1,5 +1,5 @@
 TARGET = qtgeoservices_nokia
-QT +=  positioning-private network
+QT +=  positioning-private network maps
 
 PLUGIN_TYPE = geoservices
 load(qt_plugin)
@@ -12,7 +12,7 @@ INCLUDEPATH+=../../location/maps ../../location/ ../../location/maps/tiled
 CONFIG += mobility
 MOBILITY = location
 
-LIBS+=-L ../../location/maps -lmaps
+#LIBS+=-L ../../location/maps -lmaps
 
 HEADERS += \
             qgeocodexmlparser.h \
