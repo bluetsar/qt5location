@@ -7,9 +7,9 @@ load(qt_plugin)
 #include(../../../common.pri)
 
 QT += network widgets positioning
-INCLUDEPATH+=../../location/maps ../../location/ ../../location/maps/tiled
+INCLUDEPATH+=../../location/maps/fport ../../location/maps ../../location/ ../../location/maps/tiled
 
-CONFIG += mobility
+CONFIG += mobility debug
 MOBILITY = location
 
 #LIBS+=-L ../../location/maps -lmaps

@@ -1,6 +1,7 @@
 TARGET = maps
 TEMPLATE = lib
 
+CONFIG+=debug
 QT+=positioning gui widgets network
 
 MOC_DIR =     $$PWD
