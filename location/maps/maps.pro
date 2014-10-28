@@ -24,7 +24,7 @@ SOURCES += \
      fport/qgeoboundingarea.cpp \
      fport/qgeoboundingbox.cpp \
      fport/qgeoplace.cpp \
-     fport/qgeoaddress.cpp \
+#     fport/qgeoaddress.cpp \
      fport/qgeoboundingcircle.cpp \
      qlatin1constant.cpp \
      fport/projwrapper_p.cpp
@@ -35,7 +35,7 @@ PRIVATE_HEADERS += \
      fport/qgeoboundingcircle_p.h\
      fport/qgeoboundingbox_p.h \
      fport/qgeoplace_p.h \
-     fport/qgeoaddress_p.h \
+ #    fport/qgeoaddress_p.h \
      fport/projwrapper_p.h
 
 

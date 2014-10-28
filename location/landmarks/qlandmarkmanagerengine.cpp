@@ -121,7 +121,7 @@ QVariant getLandmarkAttribute(const QString key, const QLandmark &landmark)
     } else if (key == "street") {
         return landmark.address().street();
     } else if (key == "postcode") {
-        return landmark.address().postcode();
+        return landmark.address().postalCode();
     } else if (key == "phoneNumber") {
         return landmark.phoneNumber();
     } else {

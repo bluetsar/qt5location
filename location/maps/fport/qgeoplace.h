@@ -45,7 +45,7 @@
 #include "qmobilityglobal.h"
 #include <QSharedDataPointer>
 
-#include "qgeoaddress.h"
+#include <qgeoaddress.h>
 #include "qgeoboundingbox.h"
 #include "qgeocoordinate.h"
 
